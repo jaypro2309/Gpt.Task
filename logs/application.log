@@ -1,0 +1,5 @@
+2025-08-03 16:56:09 [main] INFO  Log - Starting webdriver.
+2025-08-03 16:56:12 [main] INFO  Log - Nevagating to URL.
+2025-08-03 16:56:15 [main] INFO  Log - Starting login Test..
+2025-08-03 16:56:16 [main] INFO  Log - Login successfully..
+2025-08-03 16:56:16 [main] INFO  Log - Closing Browser.

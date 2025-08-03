@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import base.BaseTest;
 import pages.LoginPage;
+import utils.Log;
 
 public class login {
 
@@ -12,11 +13,12 @@ public class login {
 		
 		@Test
 		public void tesLogin() {
+			Log.info("Starting login Test..");
 			LoginPage loginPage = new LoginPage(driver);
 			loginPage.enterUsername("student");
 			loginPage.enterPassword("Password123");
 			loginPage.submitButton();
-			
+			Log.info("Login successfully..");
 			System.out.println("title:   "+ driver.getTitle());
 			Assert.assertEquals(driver.getTitle(), "Logged In Successfully | Practice Test Automation");
 		}
