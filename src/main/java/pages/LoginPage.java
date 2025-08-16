@@ -2,36 +2,143 @@ package pages;
 
 import java.time.Duration;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
-	
-    private WebDriverWait wait;
+
+	private WebDriverWait wait;
 	private WebDriver driver;
-	private By usernameTextBox = By.id("username");
-	private By passwordTextBox = By.id("password");
-	private By loginButton = By.id("submit");
+
+	@FindBy(xpath = "//input[@placeholder='Enter your email']")
+	WebElement email;
+
+	@FindBy(xpath = "//div[text()='Please enter email address']")
+	WebElement email_validation;
+
+	@FindBy(xpath = "//input[@placeholder='Enter your password']")
+	WebElement password;
+
+	@FindBy(xpath = "//div[text()='Please enter password']")
+	WebElement password_validation;
+
+	@FindBy(xpath = "//button[text()='Login']")
+	WebElement loginButton;
+	
+	@FindBy(xpath = "//strong[text()='Products']")
+	WebElement brand_Products;
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
-	
-	public void enterUsername(String username) {
-		driver.findElement(usernameTextBox).clear();
-		driver.findElement(usernameTextBox).sendKeys(username);
+
+	public void check_validation() {
+		wait.until(ExpectedConditions.visibilityOf(loginButton)).click();
+		if (email_validation.isDisplayed() & password_validation.isDisplayed()) {
+			System.out.println("email and password validation is visible.");
+		} else {
+			System.out.println("email and password validation is NOT visible");
+		}
+
 	}
-	
-	public void enterPassword(String password) {
-		driver.findElement(passwordTextBox).clear();
-		driver.findElement(passwordTextBox).sendKeys(password);	
+
+	public void enter_email_only(String user_email) {
+		driver.navigate().refresh();
+		wait.until(ExpectedConditions.visibilityOf(email));
+		email.clear();
+		email.sendKeys(user_email);
+		loginButton.click();
+		if (password_validation.isDisplayed()) {
+			System.out.println("password_validation is displayed.");
+		} else {
+			System.out.println("password_validation isn't displayed.");
+		}
+
 	}
-	
-	public void submitButton() {
-		driver.findElement(loginButton).click();
-		wait.until(ExpectedConditions.titleContains("Logged In Successfully | Practice Test Automation"));
+
+	public void enter_password_only(String user_password) {
+		driver.navigate().refresh();
+		wait.until(ExpectedConditions.visibilityOf(password));
+		password.clear();
+		password.sendKeys(user_password);
+		loginButton.click();
+		if (email_validation.isDisplayed()) {
+			System.out.println("email_validation is displayed.");
+		} else {
+			System.out.println("email_validation isn't displayed.");
+		}
+
+	}
+
+	public void enter_emailpassword_wrong(String user_email, String user_password) {
+		driver.navigate().refresh();
+		wait.until(ExpectedConditions.visibilityOf(email));
+		email.clear();
+		email.sendKeys(user_email);
+
+		password.clear();
+		password.sendKeys(user_password);
+		loginButton.click();
+		if (email_validation.isDisplayed() & password_validation.isDisplayed()) {
+			System.out.println("email and password validation is visible.");
+		} else {
+			System.out.println("email and password validation is NOT visible");
+		}
+	}
+
+	public void enter_email_wrong_password_correct(String user_email, String user_password) {
+		driver.navigate().refresh();
+		wait.until(ExpectedConditions.visibilityOf(email));
+		email.clear();
+		email.sendKeys(user_email);
+
+		password.clear();
+		password.sendKeys(user_password);
+		loginButton.click();
+		if (email_validation.isDisplayed()) {
+			System.out.println("email validation is visible.");
+		} else {
+			System.out.println("email validation is NOT visible");
+		}
+	}
+
+	public void enter_email_correct_password_wrong(String user_email, String user_password) {
+		driver.navigate().refresh();
+		wait.until(ExpectedConditions.visibilityOf(email));
+		email.clear();
+		email.sendKeys(user_email);
+
+		password.clear();
+		password.sendKeys(user_password);
+		loginButton.click();
+		if (password_validation.isDisplayed()) {
+			System.out.println("password validation is visible.");
+		} else {
+			System.out.println("password validation is NOT visible");
+		}
+	}
+
+	public void enter_email_password_correct(String user_email, String user_password) {
+		driver.navigate().refresh();
+		wait.until(ExpectedConditions.visibilityOf(email));
+		email.clear();
+		email.sendKeys(user_email);
+
+		password.clear();
+		password.sendKeys(user_password);
+		loginButton.click();
+		if (email_validation.isDisplayed() & password_validation.isDisplayed()) {
+			System.out.println("email and password validation is visible.");
+		} else {
+			System.out.println("email and password validation is NOT visible");
+		}
+	}
+
+	public void checkLogin() {
+		wait.until(ExpectedConditions.visibilityOf(brand_Products));
 	}
 }

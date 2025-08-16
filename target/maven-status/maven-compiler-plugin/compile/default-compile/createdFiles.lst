@@ -1,0 +1,6 @@
+base\BaseTest.class
+pages\BrandSelection.class
+utils\Log.class
+pages\LoginPage.class
+utils\ExtentReportManager.class
+utils\ConfigReader.class

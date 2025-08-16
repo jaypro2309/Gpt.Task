@@ -8,11 +8,57 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">7,405</td><td></td><td></td></tr>
+<tr><th colspan="8">TestSuite</th></tr>
+<tr><td><a href="#t0">Logintest</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">7</td><td class="num">8,187</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">LoginTest.login$Login</td><td><a href="#m0">tesLogin</a></td><td rowspan="1">1754220375249</td><td rowspan="1">1006</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Logintest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="7">TestCases.login</td><td><a href="#m0">login_case_1</a></td><td rowspan="1">1755366973587</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m1">login_case_2</a></td><td rowspan="1">1755366973590</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m2">login_case_3</a></td><td rowspan="1">1755366973592</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m3">login_case_4</a></td><td rowspan="1">1755366973593</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m4">login_case_5</a></td><td rowspan="1">1755366973595</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m5">login_case_6</a></td><td rowspan="1">1755366973597</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m6">redirection_dashboard</a></td><td rowspan="1">1755366973598</td><td rowspan="1">1</td></tr><tr><th colspan="4">Logintest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">TestCases.brandSelect</td><td><a href="#m7">Hc2uSelect</a></td><td rowspan="1">1755366965764</td><td rowspan="1">492</td></tr><tr class="passedeven"><td><a href="#m8">PcgsSelect</a></td><td rowspan="1">1755366966257</td><td rowspan="1">319</td></tr><tr class="passedeven"><td><a href="#m9">select_M</a></td><td rowspan="1">1755366965580</td><td rowspan="1">182</td></tr><tr class="passedeven"><td><a href="#m10">start</a></td><td rowspan="1">1755366965444</td><td rowspan="1">133</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">LoginTest.login$Login#tesLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Logintest</h2><h3 id="m0">TestCases.login#login_case_1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pages.LoginPage.check_validation(LoginPage.java:40)
+	at TestCases.login.login_case_1(login.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestCases.login#login_case_2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at pages.LoginPage.enter_email_only(LoginPage.java:50)
+	at TestCases.login.login_case_2(login.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestCases.login#login_case_3</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at pages.LoginPage.enter_password_only(LoginPage.java:64)
+	at TestCases.login.login_case_3(login.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestCases.login#login_case_4</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at pages.LoginPage.enter_email_correct_password_wrong(LoginPage.java:110)
+	at TestCases.login.login_case_4(login.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">TestCases.login#login_case_5</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at pages.LoginPage.enter_email_wrong_password_correct(LoginPage.java:94)
+	at TestCases.login.login_case_5(login.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">TestCases.login#login_case_6</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at pages.LoginPage.enter_email_password_correct(LoginPage.java:126)
+	at TestCases.login.login_case_6(login.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">TestCases.login#redirection_dashboard</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pages.LoginPage.checkLogin(LoginPage.java:142)
+	at TestCases.login.redirection_dashboard(login.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">TestCases.brandSelect#Hc2uSelect</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">TestCases.brandSelect#PcgsSelect</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">TestCases.brandSelect#select_M</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">TestCases.brandSelect#start</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

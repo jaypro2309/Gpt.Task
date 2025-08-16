@@ -3,13 +3,20 @@
 <suite name="Failed suite [TestSuite]">
   <test thread-count="5" name="Logintest(failed)">
     <classes>
-      <class name="LoginTest.login$Login">
+      <class name="TestCases.login">
         <methods>
           <include name="setUp"/>
-          <include name="tesLogin"/>
           <include name="tearDown"/>
+          <include name="login_case_5"/>
+          <include name="redirection_dashboard"/>
+          <include name="login_case_6"/>
+          <include name="login_case_1"/>
+          <include name="login_case_3"/>
+          <include name="login_case_2"/>
+          <include name="setupPage"/>
+          <include name="login_case_4"/>
         </methods>
-      </class> <!-- LoginTest.login$Login -->
+      </class> <!-- TestCases.login -->
     </classes>
   </test> <!-- Logintest(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->
