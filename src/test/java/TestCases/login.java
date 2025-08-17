@@ -18,12 +18,13 @@ public class login extends BaseTest {
 		test = ExtentReportManager.createTest("Login Test");
 	}
 
-	/*
-	 * @Test(priority = 5) public void login_case_1() throws InterruptedException {
-	 * System.out.println("test stops hear"); login_test.check_validation();
-	 * System.out.println("test stops hear too");
-	 * test.pass("validation are displayed."); }
-	 */
+	@Test(priority = 5)
+	public void login_case_1() {
+		System.out.println("test stops hear");
+		login_test.check_validation();
+		System.out.println("test stops hear too");
+		test.pass("validation are displayed.");
+	}
 
 	@Test(priority = 6)
 	public void login_case_2() {

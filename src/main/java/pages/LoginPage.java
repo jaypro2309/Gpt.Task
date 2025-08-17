@@ -26,8 +26,8 @@ public class LoginPage {
 	@FindBy(xpath = "//div[text()='Please enter password']")
 	WebElement password_validation;
 
-	@FindBy(xpath = "//button[text()='Login']")
-	WebElement loginButton;
+	@FindBy(xpath = "//button[normalize-space(text())='Login']")
+	WebElement loginbutton;
 
 	@FindBy(xpath = "//button[text()='Add']")
 	WebElement brand_Products;
@@ -38,24 +38,16 @@ public class LoginPage {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 
-	public void check_validation() throws InterruptedException {
-		try {
-			 if (loginButton.isDisplayed()) {
-		            System.out.println("Login button is displayed.");
-		        } else {
-		            System.out.println("Login button is NOT displayed.");
-		        }
-			wait.until(ExpectedConditions.visibilityOf(loginButton));
-			wait.until(ExpectedConditions.elementToBeClickable(loginButton)).click();
-			Thread.sleep(8000);
+	public void check_validation() {
+			driver.navigate().refresh();
+			System.out.println("bingo.");
+			wait.until(ExpectedConditions.elementToBeClickable(loginbutton)).click();
+			
 			if (email_validation.isDisplayed() && password_validation.isDisplayed()) {
 				System.out.println("email and password validation is visible.");
 			} else {
 				System.out.println("email and password validation is NOT visible");
 			}
-		} catch (Exception e) {
-			System.out.println("An error occurred: " + e.getMessage());
-		}
 	}
 
 	public void enter_email_only(String user_email) {
@@ -64,7 +56,7 @@ public class LoginPage {
 		email.clear();
 		password.clear();
 		email.sendKeys(user_email);
-		loginButton.click();
+		loginbutton.click();
 		if (password_validation.isDisplayed()) {
 			System.out.println("password_validation is displayed.");
 		} else {
@@ -78,7 +70,7 @@ public class LoginPage {
 		wait.until(ExpectedConditions.visibilityOf(password));
 		password.clear();
 		password.sendKeys(user_password);
-		loginButton.click();
+		loginbutton.click();
 		if (email_validation.isDisplayed()) {
 			System.out.println("email_validation is displayed.");
 		} else {
@@ -95,7 +87,7 @@ public class LoginPage {
 
 		password.clear();
 		password.sendKeys(user_password);
-		loginButton.click();
+		loginbutton.click();
 		if (email_validation.isDisplayed() & password_validation.isDisplayed()) {
 			System.out.println("email and password validation is visible.");
 		} else {
@@ -111,7 +103,7 @@ public class LoginPage {
 
 		password.clear();
 		password.sendKeys(user_password);
-		loginButton.click();
+		loginbutton.click();
 		if (email_validation.isDisplayed()) {
 			System.out.println("email validation is visible.");
 		} else {
@@ -127,7 +119,7 @@ public class LoginPage {
 
 		password.clear();
 		password.sendKeys(user_password);
-		loginButton.click();
+		loginbutton.click();
 		if (password_validation.isDisplayed()) {
 			System.out.println("password validation is visible.");
 		} else {
@@ -143,7 +135,7 @@ public class LoginPage {
 
 		password.clear();
 		password.sendKeys(user_password);
-		loginButton.click();
+		loginbutton.click();
 		if (email_validation.isDisplayed() & password_validation.isDisplayed()) {
 			System.out.println("email and password validation is visible.");
 		} else {

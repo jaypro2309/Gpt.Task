@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>HealthcareApp Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/6/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Aug 17 12:19:38 IST 2025</td>
+<td>Started on:</td><td>Sun Aug 17 18:21:57 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>2 seconds (2023 ms)</td>
+<tr><td>Total time:</td><td>16 seconds (16627 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,275 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='TestCases.login.redirection_dashboard()'><b>redirection_dashboard</b><br>Test class: TestCases.login</td>
-<td><div><pre>java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy30.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at pages.LoginPage.checkLogin(LoginPage.java:155)
-	at TestCases.login.redirection_dashboard(login.java:60)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace730584984", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace730584984'><pre>java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy30.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at pages.LoginPage.checkLogin(LoginPage.java:155)
-	at TestCases.login.redirection_dashboard(login.java:60)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>TestCases.login@3f191845</td></tr>
-<tr>
-<td title='TestCases.login.login_case_5()'><b>login_case_5</b><br>Test class: TestCases.login</td>
-<td><div><pre>java.lang.NullPointerException
-	at pages.LoginPage.enter_email_wrong_password_correct(LoginPage.java:107)
-	at TestCases.login.login_case_5(login.java:48)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace780172372", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace780172372'><pre>java.lang.NullPointerException
-	at pages.LoginPage.enter_email_wrong_password_correct(LoginPage.java:107)
-	at TestCases.login.login_case_5(login.java:48)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>TestCases.login@3f191845</td></tr>
-<tr>
-<td title='TestCases.login.login_case_6()'><b>login_case_6</b><br>Test class: TestCases.login</td>
-<td><div><pre>java.lang.NullPointerException
-	at pages.LoginPage.enter_email_password_correct(LoginPage.java:139)
-	at TestCases.login.login_case_6(login.java:54)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace606740638", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace606740638'><pre>java.lang.NullPointerException
-	at pages.LoginPage.enter_email_password_correct(LoginPage.java:139)
-	at TestCases.login.login_case_6(login.java:54)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>TestCases.login@3f191845</td></tr>
-<tr>
-<td title='TestCases.login.login_case_4()'><b>login_case_4</b><br>Test class: TestCases.login</td>
-<td><div><pre>java.lang.NullPointerException
-	at pages.LoginPage.enter_email_correct_password_wrong(LoginPage.java:123)
-	at TestCases.login.login_case_4(login.java:42)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1172417096", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1172417096'><pre>java.lang.NullPointerException
-	at pages.LoginPage.enter_email_correct_password_wrong(LoginPage.java:123)
-	at TestCases.login.login_case_4(login.java:42)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>TestCases.login@3f191845</td></tr>
-<tr>
-<td title='TestCases.login.login_case_2()'><b>login_case_2</b><br>Test class: TestCases.login</td>
-<td><div><pre>java.lang.NullPointerException
-	at pages.LoginPage.enter_email_only(LoginPage.java:62)
-	at TestCases.login.login_case_2(login.java:30)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1799316869", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1799316869'><pre>java.lang.NullPointerException
-	at pages.LoginPage.enter_email_only(LoginPage.java:62)
-	at TestCases.login.login_case_2(login.java:30)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>TestCases.login@3f191845</td></tr>
-<tr>
-<td title='TestCases.login.login_case_3()'><b>login_case_3</b><br>Test class: TestCases.login</td>
-<td><div><pre>java.lang.NullPointerException
-	at pages.LoginPage.enter_password_only(LoginPage.java:77)
-	at TestCases.login.login_case_3(login.java:36)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1041255755", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1041255755'><pre>java.lang.NullPointerException
-	at pages.LoginPage.enter_password_only(LoginPage.java:77)
-	at TestCases.login.login_case_3(login.java:36)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>TestCases.login@3f191845</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -345,25 +76,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestCases.brandSelect.PcgsSelect()'><b>PcgsSelect</b><br>Test class: TestCases.brandSelect</td>
-<td></td>
-<td>0</td>
-<td>TestCases.brandSelect@28261e8e</td></tr>
-<tr>
 <td title='TestCases.brandSelect.start()'><b>start</b><br>Test class: TestCases.brandSelect</td>
 <td></td>
 <td>0</td>
-<td>TestCases.brandSelect@28261e8e</td></tr>
+<td>TestCases.brandSelect@7bba5817</td></tr>
 <tr>
 <td title='TestCases.brandSelect.select_M()'><b>select_M</b><br>Test class: TestCases.brandSelect</td>
 <td></td>
 <td>0</td>
-<td>TestCases.brandSelect@28261e8e</td></tr>
+<td>TestCases.brandSelect@7bba5817</td></tr>
 <tr>
 <td title='TestCases.brandSelect.Hc2uSelect()'><b>Hc2uSelect</b><br>Test class: TestCases.brandSelect</td>
 <td></td>
 <td>0</td>
-<td>TestCases.brandSelect@28261e8e</td></tr>
+<td>TestCases.brandSelect@7bba5817</td></tr>
+<tr>
+<td title='TestCases.brandSelect.PcgsSelect()'><b>PcgsSelect</b><br>Test class: TestCases.brandSelect</td>
+<td></td>
+<td>8</td>
+<td>TestCases.brandSelect@7bba5817</td></tr>
 </table><p>
 </body>
 </html>

@@ -2,7 +2,7 @@ package base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -29,7 +29,7 @@ public class BaseTest {
 		}
 	}
 
-	@AfterTest
+	@AfterSuite
 	public void tearDown() {
 		if (driver != null) {
 			Log.info("Closing Browser.");

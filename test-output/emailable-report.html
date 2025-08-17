@@ -8,37 +8,120 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">TestSuite</th></tr>
-<tr><td><a href="#t0">HealthcareApp Tests</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">6</td><td class="num">2,023</td><td></td><td></td></tr>
+<tr><th colspan="8">MySuite</th></tr>
+<tr><td><a href="#t0">Brand Select</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">47</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Login</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">7</td><td class="num">73,837</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">10</th><th class="num">73,884</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">HealthcareApp Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="6">TestCases.login</td><td><a href="#m0">login_case_2</a></td><td rowspan="1">1755413380414</td><td rowspan="1">2</td></tr><tr class="failedeven"><td><a href="#m1">login_case_3</a></td><td rowspan="1">1755413380418</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m2">login_case_4</a></td><td rowspan="1">1755413380420</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m3">login_case_5</a></td><td rowspan="1">1755413380423</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m4">login_case_6</a></td><td rowspan="1">1755413380425</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m5">redirection_dashboard</a></td><td rowspan="1">1755413380426</td><td rowspan="1">2</td></tr><tr><th colspan="4">HealthcareApp Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">TestCases.brandSelect</td><td><a href="#m6">Hc2uSelect</a></td><td rowspan="1">1755413379519</td><td rowspan="1">556</td></tr><tr class="passedeven"><td><a href="#m7">PcgsSelect</a></td><td rowspan="1">1755413380076</td><td rowspan="1">334</td></tr><tr class="passedeven"><td><a href="#m8">select_M</a></td><td rowspan="1">1755413378860</td><td rowspan="1">657</td></tr><tr class="passedeven"><td><a href="#m9">start</a></td><td rowspan="1">1755413378850</td><td rowspan="1">6</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MySuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Brand Select &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">TestCases.brandSelect</td><td><a href="#m0">Hc2uSelect</a></td><td rowspan="1">1755436360547</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m1">PcgsSelect</a></td><td rowspan="1">1755436360549</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m2">select_M</a></td><td rowspan="1">1755436360542</td><td rowspan="1">3</td></tr><tr><th colspan="4">Brand Select &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCases.brandSelect</td><td><a href="#m3">start</a></td><td rowspan="1">1755436360535</td><td rowspan="1">5</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Login &#8212; failed</th></tr><tr class="failedeven"><td rowspan="7">TestCases.login</td><td><a href="#m4">login_case_1</a></td><td rowspan="1">1755436360576</td><td rowspan="1">11018</td></tr><tr class="failedeven"><td><a href="#m5">login_case_2</a></td><td rowspan="1">1755436371597</td><td rowspan="1">10533</td></tr><tr class="failedeven"><td><a href="#m6">login_case_3</a></td><td rowspan="1">1755436382132</td><td rowspan="1">10510</td></tr><tr class="failedeven"><td><a href="#m7">login_case_4</a></td><td rowspan="1">1755436392644</td><td rowspan="1">10522</td></tr><tr class="failedeven"><td><a href="#m8">login_case_5</a></td><td rowspan="1">1755436403168</td><td rowspan="1">10496</td></tr><tr class="failedeven"><td><a href="#m9">login_case_6</a></td><td rowspan="1">1755436413666</td><td rowspan="1">10524</td></tr><tr class="failedeven"><td><a href="#m10">redirection_dashboard</a></td><td rowspan="1">1755436424191</td><td rowspan="1">10219</td></tr></tbody>
 </table>
-<h2>HealthcareApp Tests</h2><h3 id="m0">TestCases.login#login_case_2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at pages.LoginPage.enter_email_only(LoginPage.java:62)
-	at TestCases.login.login_case_2(login.java:30)
+<h2>Brand Select</h2><h3 id="m0">TestCases.brandSelect#Hc2uSelect</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy30.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pages.BrandSelection.hc2UbrandSelect(BrandSelection.java:40)
+	at TestCases.brandSelect.Hc2uSelect(brandSelect.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestCases.login#login_case_3</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at pages.LoginPage.enter_password_only(LoginPage.java:77)
-	at TestCases.login.login_case_3(login.java:36)
+<h3 id="m1">TestCases.brandSelect#PcgsSelect</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy30.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pages.BrandSelection.pcgSbrandSelect(BrandSelection.java:45)
+	at TestCases.brandSelect.PcgsSelect(brandSelect.java:46)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">TestCases.login#login_case_4</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at pages.LoginPage.enter_email_correct_password_wrong(LoginPage.java:123)
-	at TestCases.login.login_case_4(login.java:42)
+<h3 id="m2">TestCases.brandSelect#select_M</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy30.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pages.BrandSelection.brandMtSelect(BrandSelection.java:34)
+	at TestCases.brandSelect.select_M(brandSelect.java:33)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">TestCases.login#login_case_5</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at pages.LoginPage.enter_email_wrong_password_correct(LoginPage.java:107)
-	at TestCases.login.login_case_5(login.java:48)
+<h3 id="m3">TestCases.brandSelect#start</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Login</h2><h3 id="m4">TestCases.login#login_case_1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //button[normalize-space(text())=&apos;Login&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.LoginPage.check_validation(LoginPage.java:44)
+	at TestCases.login.login_case_1(login.java:24)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">TestCases.login#login_case_6</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at pages.LoginPage.enter_email_password_correct(LoginPage.java:139)
-	at TestCases.login.login_case_6(login.java:54)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[normalize-space(text())=&apos;Login&apos;]&quot;}
+  (Session info: chrome=139.0.7258.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [914d3e9494431d145864ee70d0f3b73e, findElement {value=//button[normalize-space(text())=&apos;Login&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:29315}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:29315/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 914d3e9494431d145864ee70d0f3b73e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy30.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 30 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">TestCases.login#login_case_2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@placeholder=&apos;Enter your email&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.LoginPage.enter_email_only(LoginPage.java:55)
+	at TestCases.login.login_case_2(login.java:31)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">TestCases.login#redirection_dashboard</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Enter your email&apos;]&quot;}
+  (Session info: chrome=139.0.7258.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [914d3e9494431d145864ee70d0f3b73e, findElement {value=//input[@placeholder=&apos;Enter your email&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:29315}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:29315/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 914d3e9494431d145864ee70d0f3b73e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy30.isDisplayed(Unknown Source)
@@ -46,13 +129,182 @@
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at pages.LoginPage.checkLogin(LoginPage.java:155)
-	at TestCases.login.redirection_dashboard(login.java:60)
+	... 30 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">TestCases.login#login_case_3</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@placeholder=&apos;Enter your password&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.LoginPage.enter_password_only(LoginPage.java:70)
+	at TestCases.login.login_case_3(login.java:37)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">TestCases.brandSelect#Hc2uSelect</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">TestCases.brandSelect#PcgsSelect</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">TestCases.brandSelect#select_M</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">TestCases.brandSelect#start</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Enter your password&apos;]&quot;}
+  (Session info: chrome=139.0.7258.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [914d3e9494431d145864ee70d0f3b73e, findElement {value=//input[@placeholder=&apos;Enter your password&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:29315}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:29315/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 914d3e9494431d145864ee70d0f3b73e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy30.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 30 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">TestCases.login#login_case_4</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@placeholder=&apos;Enter your email&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.LoginPage.enter_email_correct_password_wrong(LoginPage.java:116)
+	at TestCases.login.login_case_4(login.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Enter your email&apos;]&quot;}
+  (Session info: chrome=139.0.7258.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [914d3e9494431d145864ee70d0f3b73e, findElement {value=//input[@placeholder=&apos;Enter your email&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:29315}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:29315/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 914d3e9494431d145864ee70d0f3b73e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy30.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 30 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">TestCases.login#login_case_5</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@placeholder=&apos;Enter your email&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.LoginPage.enter_email_wrong_password_correct(LoginPage.java:100)
+	at TestCases.login.login_case_5(login.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Enter your email&apos;]&quot;}
+  (Session info: chrome=139.0.7258.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [914d3e9494431d145864ee70d0f3b73e, findElement {value=//input[@placeholder=&apos;Enter your email&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:29315}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:29315/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 914d3e9494431d145864ee70d0f3b73e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy30.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 30 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">TestCases.login#login_case_6</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@placeholder=&apos;Enter your email&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.LoginPage.enter_email_password_correct(LoginPage.java:132)
+	at TestCases.login.login_case_6(login.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Enter your email&apos;]&quot;}
+  (Session info: chrome=139.0.7258.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [914d3e9494431d145864ee70d0f3b73e, findElement {value=//input[@placeholder=&apos;Enter your email&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:29315}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:29315/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 914d3e9494431d145864ee70d0f3b73e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy30.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 30 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">TestCases.login#redirection_dashboard</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //button[text()=&apos;Add&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.LoginPage.checkLogin(LoginPage.java:147)
+	at TestCases.login.redirection_dashboard(login.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Add&apos;]&quot;}
+  (Session info: chrome=139.0.7258.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [914d3e9494431d145864ee70d0f3b73e, findElement {value=//button[text()=&apos;Add&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:29315}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:29315/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 914d3e9494431d145864ee70d0f3b73e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy30.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 30 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

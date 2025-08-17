@@ -8,11 +8,12 @@
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="login_case_5"/>
+          <include name="setupLoginCases"/>
           <include name="redirection_dashboard"/>
           <include name="login_case_6"/>
+          <include name="login_case_1"/>
           <include name="login_case_3"/>
           <include name="login_case_2"/>
-          <include name="setupPage"/>
           <include name="login_case_4"/>
         </methods>
       </class> <!-- TestCases.login -->
