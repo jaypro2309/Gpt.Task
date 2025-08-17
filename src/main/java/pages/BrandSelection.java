@@ -30,9 +30,11 @@ public class BrandSelection {
 	}
 
 	public void brandMtSelect() {
+		for(int i=0 ; i<2; i++){
 	    wait.until(ExpectedConditions.elementToBeClickable(brandHc2U)).click();
 	    wait.until(ExpectedConditions.elementToBeClickable(brandPcgS)).click();
-	}
+		}
+		}
 
 	public void hc2UbrandSelect() {
 	    wait.until(ExpectedConditions.elementToBeClickable(brandHc2U)).click();

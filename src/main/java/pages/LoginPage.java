@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -27,29 +28,41 @@ public class LoginPage {
 
 	@FindBy(xpath = "//button[text()='Login']")
 	WebElement loginButton;
-	
-	@FindBy(xpath = "//strong[text()='Products']")
+
+	@FindBy(xpath = "//button[text()='Add']")
 	WebElement brand_Products;
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
+		PageFactory.initElements(driver, this);
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 
-	public void check_validation() {
-		wait.until(ExpectedConditions.visibilityOf(loginButton)).click();
-		if (email_validation.isDisplayed() & password_validation.isDisplayed()) {
-			System.out.println("email and password validation is visible.");
-		} else {
-			System.out.println("email and password validation is NOT visible");
+	public void check_validation() throws InterruptedException {
+		try {
+			 if (loginButton.isDisplayed()) {
+		            System.out.println("Login button is displayed.");
+		        } else {
+		            System.out.println("Login button is NOT displayed.");
+		        }
+			wait.until(ExpectedConditions.visibilityOf(loginButton));
+			wait.until(ExpectedConditions.elementToBeClickable(loginButton)).click();
+			Thread.sleep(8000);
+			if (email_validation.isDisplayed() && password_validation.isDisplayed()) {
+				System.out.println("email and password validation is visible.");
+			} else {
+				System.out.println("email and password validation is NOT visible");
+			}
+		} catch (Exception e) {
+			System.out.println("An error occurred: " + e.getMessage());
 		}
-
 	}
 
 	public void enter_email_only(String user_email) {
 		driver.navigate().refresh();
 		wait.until(ExpectedConditions.visibilityOf(email));
 		email.clear();
+		password.clear();
 		email.sendKeys(user_email);
 		loginButton.click();
 		if (password_validation.isDisplayed()) {

@@ -1,6 +1,5 @@
 <suite name="TestSuite">
 	<test name="Logintest">
-
 		<classes>
 			<class name="TestCases.brandSelect" />
 			<class name="TestCases.login" />

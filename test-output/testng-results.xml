@@ -1,66 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="4" failed="7" skipped="0">
+<testng-results ignored="0" total="10" passed="4" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-16T23:26:05 IST" name="TestSuite" finished-at="2025-08-16T23:26:13 IST" duration-ms="8187">
+  <suite started-at="2025-08-17T12:19:38 IST" name="TestSuite" finished-at="2025-08-17T12:19:40 IST" duration-ms="2023">
     <groups>
     </groups>
-    <test started-at="2025-08-16T23:26:05 IST" name="Logintest" finished-at="2025-08-16T23:26:13 IST" duration-ms="8187">
+    <test started-at="2025-08-17T12:19:38 IST" name="HealthcareApp Tests" finished-at="2025-08-17T12:19:40 IST" duration-ms="2023">
       <class name="TestCases.login">
-        <test-method is-config="true" signature="setupPage()[pri:0, instance:TestCases.login@1c5920df]" started-at="2025-08-16T23:26:06 IST" name="setupPage" finished-at="2025-08-16T23:26:13 IST" duration-ms="7009" status="PASS">
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:TestCases.login@3f191845]" started-at="2025-08-17T12:19:40 IST" name="setupPage" finished-at="2025-08-17T12:19:40 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPage -->
-        <test-method signature="login_case_1()[pri:1, instance:TestCases.login@1c5920df]" started-at="2025-08-16T23:26:13 IST" name="login_case_1" finished-at="2025-08-16T23:26:13 IST" duration-ms="1" status="FAIL">
+        <test-method signature="login_case_2()[pri:6, instance:TestCases.login@3f191845]" started-at="2025-08-17T12:19:40 IST" name="login_case_2" finished-at="2025-08-17T12:19:40 IST" duration-ms="2" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-at pages.LoginPage.check_validation(LoginPage.java:40)
-at TestCases.login.login_case_1(login.java:25)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login_case_1 -->
-        <test-method signature="login_case_2()[pri:2, instance:TestCases.login@1c5920df]" started-at="2025-08-16T23:26:13 IST" name="login_case_2" finished-at="2025-08-16T23:26:13 IST" duration-ms="0" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at pages.LoginPage.enter_email_only(LoginPage.java:50)
-at TestCases.login.login_case_2(login.java:31)
+at pages.LoginPage.enter_email_only(LoginPage.java:62)
+at TestCases.login.login_case_2(login.java:30)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -95,12 +51,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_case_2 -->
-        <test-method signature="login_case_3()[pri:3, instance:TestCases.login@1c5920df]" started-at="2025-08-16T23:26:13 IST" name="login_case_3" finished-at="2025-08-16T23:26:13 IST" duration-ms="0" status="FAIL">
+        <test-method signature="login_case_3()[pri:7, instance:TestCases.login@3f191845]" started-at="2025-08-17T12:19:40 IST" name="login_case_3" finished-at="2025-08-17T12:19:40 IST" duration-ms="0" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at pages.LoginPage.enter_password_only(LoginPage.java:64)
-at TestCases.login.login_case_3(login.java:37)
+at pages.LoginPage.enter_password_only(LoginPage.java:77)
+at TestCases.login.login_case_3(login.java:36)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -135,12 +91,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_case_3 -->
-        <test-method signature="login_case_4()[pri:4, instance:TestCases.login@1c5920df]" started-at="2025-08-16T23:26:13 IST" name="login_case_4" finished-at="2025-08-16T23:26:13 IST" duration-ms="1" status="FAIL">
+        <test-method signature="login_case_4()[pri:8, instance:TestCases.login@3f191845]" started-at="2025-08-17T12:19:40 IST" name="login_case_4" finished-at="2025-08-17T12:19:40 IST" duration-ms="0" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at pages.LoginPage.enter_email_correct_password_wrong(LoginPage.java:110)
-at TestCases.login.login_case_4(login.java:43)
+at pages.LoginPage.enter_email_correct_password_wrong(LoginPage.java:123)
+at TestCases.login.login_case_4(login.java:42)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -175,12 +131,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_case_4 -->
-        <test-method signature="login_case_5()[pri:5, instance:TestCases.login@1c5920df]" started-at="2025-08-16T23:26:13 IST" name="login_case_5" finished-at="2025-08-16T23:26:13 IST" duration-ms="0" status="FAIL">
+        <test-method signature="login_case_5()[pri:9, instance:TestCases.login@3f191845]" started-at="2025-08-17T12:19:40 IST" name="login_case_5" finished-at="2025-08-17T12:19:40 IST" duration-ms="0" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at pages.LoginPage.enter_email_wrong_password_correct(LoginPage.java:94)
-at TestCases.login.login_case_5(login.java:49)
+at pages.LoginPage.enter_email_wrong_password_correct(LoginPage.java:107)
+at TestCases.login.login_case_5(login.java:48)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -215,12 +171,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_case_5 -->
-        <test-method signature="login_case_6()[pri:6, instance:TestCases.login@1c5920df]" started-at="2025-08-16T23:26:13 IST" name="login_case_6" finished-at="2025-08-16T23:26:13 IST" duration-ms="0" status="FAIL">
+        <test-method signature="login_case_6()[pri:10, instance:TestCases.login@3f191845]" started-at="2025-08-17T12:19:40 IST" name="login_case_6" finished-at="2025-08-17T12:19:40 IST" duration-ms="0" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at pages.LoginPage.enter_email_password_correct(LoginPage.java:126)
-at TestCases.login.login_case_6(login.java:55)
+at pages.LoginPage.enter_email_password_correct(LoginPage.java:139)
+at TestCases.login.login_case_6(login.java:54)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -255,16 +211,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_case_6 -->
-        <test-method signature="redirection_dashboard()[pri:7, instance:TestCases.login@1c5920df]" started-at="2025-08-16T23:26:13 IST" name="redirection_dashboard" finished-at="2025-08-16T23:26:13 IST" duration-ms="1" status="FAIL">
+        <test-method signature="redirection_dashboard()[pri:11, instance:TestCases.login@3f191845]" started-at="2025-08-17T12:19:40 IST" name="redirection_dashboard" finished-at="2025-08-17T12:19:40 IST" duration-ms="2" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy30.isDisplayed(Unknown Source)
 at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
 at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
 at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-at pages.LoginPage.checkLogin(LoginPage.java:142)
-at TestCases.login.redirection_dashboard(login.java:61)
+at pages.LoginPage.checkLogin(LoginPage.java:155)
+at TestCases.login.redirection_dashboard(login.java:60)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -301,35 +260,35 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         </test-method> <!-- redirection_dashboard -->
       </class> <!-- TestCases.login -->
       <class name="TestCases.brandSelect">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.brandSelect@33065d67]" started-at="2025-08-16T23:25:59 IST" name="setUp" finished-at="2025-08-16T23:26:05 IST" duration-ms="6090" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.brandSelect@28261e8e]" started-at="2025-08-17T12:19:32 IST" name="setUp" finished-at="2025-08-17T12:19:38 IST" duration-ms="6615" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setupPage()[pri:0, instance:TestCases.brandSelect@33065d67]" started-at="2025-08-16T23:26:05 IST" name="setupPage" finished-at="2025-08-16T23:26:05 IST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:TestCases.brandSelect@28261e8e]" started-at="2025-08-17T12:19:38 IST" name="setupPage" finished-at="2025-08-17T12:19:38 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPage -->
-        <test-method signature="start()[pri:1, instance:TestCases.brandSelect@33065d67]" started-at="2025-08-16T23:26:05 IST" name="start" finished-at="2025-08-16T23:26:05 IST" duration-ms="133" status="PASS">
+        <test-method signature="start()[pri:1, instance:TestCases.brandSelect@28261e8e]" started-at="2025-08-17T12:19:38 IST" name="start" finished-at="2025-08-17T12:19:38 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="select_M()[pri:2, instance:TestCases.brandSelect@33065d67]" started-at="2025-08-16T23:26:05 IST" name="select_M" finished-at="2025-08-16T23:26:05 IST" duration-ms="182" status="PASS">
+        <test-method signature="select_M()[pri:2, instance:TestCases.brandSelect@28261e8e]" started-at="2025-08-17T12:19:38 IST" name="select_M" finished-at="2025-08-17T12:19:39 IST" duration-ms="657" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- select_M -->
-        <test-method signature="Hc2uSelect()[pri:3, instance:TestCases.brandSelect@33065d67]" started-at="2025-08-16T23:26:05 IST" name="Hc2uSelect" finished-at="2025-08-16T23:26:06 IST" duration-ms="492" status="PASS">
+        <test-method signature="Hc2uSelect()[pri:3, instance:TestCases.brandSelect@28261e8e]" started-at="2025-08-17T12:19:39 IST" name="Hc2uSelect" finished-at="2025-08-17T12:19:40 IST" duration-ms="556" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Hc2uSelect -->
-        <test-method signature="PcgsSelect()[pri:4, instance:TestCases.brandSelect@33065d67]" started-at="2025-08-16T23:26:06 IST" name="PcgsSelect" finished-at="2025-08-16T23:26:06 IST" duration-ms="319" status="PASS">
+        <test-method signature="PcgsSelect()[pri:4, instance:TestCases.brandSelect@28261e8e]" started-at="2025-08-17T12:19:40 IST" name="PcgsSelect" finished-at="2025-08-17T12:19:40 IST" duration-ms="334" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PcgsSelect -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.brandSelect@33065d67]" started-at="2025-08-16T23:26:13 IST" name="tearDown" finished-at="2025-08-16T23:26:13 IST" duration-ms="152" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.brandSelect@28261e8e]" started-at="2025-08-17T12:19:40 IST" name="tearDown" finished-at="2025-08-17T12:19:40 IST" duration-ms="405" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestCases.brandSelect -->
-    </test> <!-- Logintest -->
+    </test> <!-- HealthcareApp Tests -->
   </suite> <!-- TestSuite -->
 </testng-results>
