@@ -125,3 +125,6 @@
 2025-08-24 18:59:23 [main] INFO  Log - Starting webdriver.
 2025-08-24 18:59:31 [main] INFO  Log - Nevagating to URL.
 2025-08-24 18:59:43 [main] INFO  Log - Closing Browser.
+2025-08-24 20:46:42 [main] INFO  Log - Starting webdriver.
+2025-08-24 20:46:49 [main] INFO  Log - Nevagating to URL.
+2025-08-24 20:47:10 [main] INFO  Log - Closing Browser.

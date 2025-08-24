@@ -70,4 +70,21 @@ public class App_Elements {
 	
 	@FindBy(xpath = "//button[@data-toggle='button']")
 	public WebElement Change_Brnad_button;
+	
+	//Add product page elements.
+	@FindBy(xpath = "(//input[@class='form-control'])[1]")
+	public WebElement Product_Name;
+
+	@FindBy(xpath = "(//input[@class='form-control'])[2]")
+	public WebElement Product_Code;
+	
+	@FindBy(xpath = "(//div[@class='error text-danger'])[1]")
+	public WebElement Product_Name_validation;
+	
+	@FindBy(xpath = "(//div[@class='error text-danger'])[2]")
+	public WebElement Product_Code_validation;
+	
+	@FindBy(xpath = "//button[@type='submit']")
+	public WebElement Save_button;
+	
 }

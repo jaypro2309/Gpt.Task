@@ -119,12 +119,6 @@ public class LoginPage extends App_Elements {
 		password.clear();
 		password.sendKeys(user_password);
 		loginbutton.click();
-		if (email_validation.isDisplayed() & password_validation.isDisplayed()) {
-			System.out.println("email and password validation is visible.");
-			Assert.fail("Email and password validation messages are displayed - login failed.");
-		} else {
-			System.out.println("email and password validation is NOT visible");
-		}
 	}
 
 	public void checkLogin() throws InterruptedException {

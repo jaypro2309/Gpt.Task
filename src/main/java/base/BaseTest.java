@@ -2,6 +2,7 @@ package base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -30,7 +31,19 @@ public class BaseTest {
 	}
 
 	@AfterSuite
-	public void tearDown() {
+	public void tearDown(ITestResult result) {
+		if(result.getStatus() == ITestResult.FAILURE) {
+			String screenshotPath = ExtentReportManager.caputureScreenshot(driver, result.getName());
+			System.out.println("screenshotPath: "+screenshotPath);
+			try {
+				test.fail("Test Failed", 
+						com.aventstack.extentreports.MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+			
+
 		if (driver != null) {
 			Log.info("Closing Browser.");
 			driver.quit();
@@ -39,6 +52,7 @@ public class BaseTest {
 		if (extent != null) {
 			extent.flush();
 		}
+	
 
 	}
 }
