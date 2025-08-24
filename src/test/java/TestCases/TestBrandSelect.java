@@ -8,7 +8,7 @@ import pages.BrandSelection;
 import utils.ExtentReportManager;
 import utils.Log;
 
-public class brandSelect extends BaseTest {
+public class TestBrandSelect extends BaseTest {
 	BrandSelection select;
 	
 	@BeforeClass

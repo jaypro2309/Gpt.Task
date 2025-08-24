@@ -9,7 +9,7 @@ import pages.LoginPage;
 import utils.ExtentReportManager;
 import utils.Log;
 
-public class login extends BaseTest {
+public class Testlogin extends BaseTest {
 	LoginPage login_test;
 	BrandSelection select;
 	

@@ -3,25 +3,16 @@ package pages;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class BrandSelection {
+import page_elements.App_Elements;
+
+public class BrandSelection extends App_Elements {
 
 	private WebDriverWait wait;
 	private WebDriver driver;
-
-	@FindBy(xpath = "//label[@for='logo1']")
-	WebElement brandHc2U;
-
-	@FindBy(xpath = "//label[@for='logo2']")
-	WebElement brandPcgS;
-
-	@FindBy(xpath = "//button[text()='Continue']")
-	WebElement continueButton;
 
 	public BrandSelection(WebDriver driver) {
 		this.driver = driver;
@@ -30,7 +21,7 @@ public class BrandSelection {
 	}
 
 	public void brandMtSelect() {
-		for(int i=0 ; i<2; i++){
+		for(int i=0 ; i<=2; i++){
 	    wait.until(ExpectedConditions.elementToBeClickable(brandHc2U)).click();
 	    wait.until(ExpectedConditions.elementToBeClickable(brandPcgS)).click();
 		}

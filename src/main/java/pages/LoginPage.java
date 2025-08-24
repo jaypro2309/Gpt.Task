@@ -3,45 +3,18 @@ package pages;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-public class LoginPage {
+import page_elements.App_Elements;
+
+public class LoginPage extends App_Elements {
 
 	private WebDriverWait wait;
 	private WebDriver driver;
 
-	@FindBy(xpath = "//input[@placeholder='Enter your email']")
-	WebElement email;
-
-	@FindBy(xpath = "//div[text()='Please enter email address']")
-	WebElement email_validation;
-
-	@FindBy(xpath = "//input[@placeholder='Enter your password']")
-	WebElement password;
-
-	@FindBy(xpath = "//div[text()='Please enter password']")
-	WebElement password_validation;
-
-	@FindBy(xpath = "//button[normalize-space(text())='Login']")
-	WebElement loginbutton;
-
-	@FindBy(xpath = "//button[text()='Add']")
-	WebElement brand_Products;
-	
-	@FindBy(xpath = "//div[@class='ant-message-notice-content']")
-	WebElement invalid_credentails;
-	
-	@FindBy(className = "ant-message-notice-content")
-	WebElement invalid_password;
-	
-	@FindBy(xpath = "//span[text()='Admin not found with provided email']")
-	WebElement invalid_email;
-	
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -49,14 +22,14 @@ public class LoginPage {
 	}
 
 	public void check_validation() {
-			driver.navigate().refresh();
-			System.out.println("bingo.");
-			wait.until(ExpectedConditions.elementToBeClickable(loginbutton)).click();
-			
-			boolean validationsVisible = email_validation.isDisplayed() && password_validation.isDisplayed();
+		driver.navigate().refresh();
+		System.out.println("bingo.");
+		wait.until(ExpectedConditions.elementToBeClickable(loginbutton)).click();
 
-		    // Test will fail if validations are visible
-		    Assert.assertFalse(validationsVisible, "❌ Email and password validation messages are visible!");
+		boolean validationsVisible = email_validation.isDisplayed() && password_validation.isDisplayed();
+
+		// Test will fail if validations are visible
+		Assert.assertFalse(validationsVisible, "❌ Email and password validation messages are visible!");
 	}
 
 	public void enter_email_only(String user_email) {
@@ -148,7 +121,7 @@ public class LoginPage {
 		loginbutton.click();
 		if (email_validation.isDisplayed() & password_validation.isDisplayed()) {
 			System.out.println("email and password validation is visible.");
-			 Assert.fail("Email and password validation messages are displayed - login failed.");
+			Assert.fail("Email and password validation messages are displayed - login failed.");
 		} else {
 			System.out.println("email and password validation is NOT visible");
 		}
