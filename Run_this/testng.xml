@@ -1,36 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="MySuite" parallel="false" preserve-order="true">
-
-    <test name="Brand Select">
+<suite name="Suite">
+	<test name="FullFlow" preserve-order="true">
         <classes>
             <class name="TestCases.brandSelect">
                 <methods>
+                    <include name="setUp" />
                     <include name="setupPage" />
-                    <include name="start"/>
                     <include name="select_M" />
                     <include name="Hc2uSelect" />
                     <include name="PcgsSelect" />
                 </methods>
             </class>
-        </classes>
-    </test>
 
-    <test name="Login">
-        <classes>
             <class name="TestCases.login">
                 <methods>
                     <include name="setupLoginCases" />
-                    <include name="login_case_1"/>
-                    <include name="login_case_2"/>
-                    <include name="login_case_3"/>
-                    <include name="login_case_4"/>
-                    <include name="login_case_5"/>
-                    <include name="login_case_6"/>
-                    <include name="redirection_dashboard"/>
+                    <include name="login_case_1" />
+                    <include name="login_case_2" />
+                    <include name="login_case_3" />
+                    <include name="login_case_4" />
+                    <include name="login_case_5" />
+                    <include name="login_case_6" />
+                    <include name="login_case_7" />
+                    <include name="redirection_dashboard" />
                 </methods>
             </class>
         </classes>
     </test>
-
-</suite>
+</suite> <!--
+Suite -->

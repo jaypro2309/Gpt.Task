@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class LoginPage {
 
@@ -31,7 +32,16 @@ public class LoginPage {
 
 	@FindBy(xpath = "//button[text()='Add']")
 	WebElement brand_Products;
-
+	
+	@FindBy(xpath = "//div[@class='ant-message-notice-content']")
+	WebElement invalid_credentails;
+	
+	@FindBy(className = "ant-message-notice-content")
+	WebElement invalid_password;
+	
+	@FindBy(xpath = "//span[text()='Admin not found with provided email']")
+	WebElement invalid_email;
+	
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -43,11 +53,10 @@ public class LoginPage {
 			System.out.println("bingo.");
 			wait.until(ExpectedConditions.elementToBeClickable(loginbutton)).click();
 			
-			if (email_validation.isDisplayed() && password_validation.isDisplayed()) {
-				System.out.println("email and password validation is visible.");
-			} else {
-				System.out.println("email and password validation is NOT visible");
-			}
+			boolean validationsVisible = email_validation.isDisplayed() && password_validation.isDisplayed();
+
+		    // Test will fail if validations are visible
+		    Assert.assertFalse(validationsVisible, "❌ Email and password validation messages are visible!");
 	}
 
 	public void enter_email_only(String user_email) {
@@ -57,6 +66,7 @@ public class LoginPage {
 		password.clear();
 		email.sendKeys(user_email);
 		loginbutton.click();
+		wait.until(ExpectedConditions.visibilityOf(password_validation));
 		if (password_validation.isDisplayed()) {
 			System.out.println("password_validation is displayed.");
 		} else {
@@ -71,6 +81,7 @@ public class LoginPage {
 		password.clear();
 		password.sendKeys(user_password);
 		loginbutton.click();
+		wait.until(ExpectedConditions.visibilityOf(email_validation));
 		if (email_validation.isDisplayed()) {
 			System.out.println("email_validation is displayed.");
 		} else {
@@ -84,12 +95,12 @@ public class LoginPage {
 		wait.until(ExpectedConditions.visibilityOf(email));
 		email.clear();
 		email.sendKeys(user_email);
-
 		password.clear();
 		password.sendKeys(user_password);
 		loginbutton.click();
-		if (email_validation.isDisplayed() & password_validation.isDisplayed()) {
-			System.out.println("email and password validation is visible.");
+		wait.until(ExpectedConditions.visibilityOf(invalid_credentails));
+		if (invalid_credentails.isDisplayed()) {
+			System.out.println("email and password validation alert is visible.");
 		} else {
 			System.out.println("email and password validation is NOT visible");
 		}
@@ -100,11 +111,11 @@ public class LoginPage {
 		wait.until(ExpectedConditions.visibilityOf(email));
 		email.clear();
 		email.sendKeys(user_email);
-
 		password.clear();
 		password.sendKeys(user_password);
 		loginbutton.click();
-		if (email_validation.isDisplayed()) {
+		wait.until(ExpectedConditions.visibilityOf(invalid_email));
+		if (invalid_email.isDisplayed()) {
 			System.out.println("email validation is visible.");
 		} else {
 			System.out.println("email validation is NOT visible");
@@ -116,11 +127,11 @@ public class LoginPage {
 		wait.until(ExpectedConditions.visibilityOf(email));
 		email.clear();
 		email.sendKeys(user_email);
-
 		password.clear();
 		password.sendKeys(user_password);
 		loginbutton.click();
-		if (password_validation.isDisplayed()) {
+		wait.until(ExpectedConditions.visibilityOf(invalid_password));
+		if (invalid_password.isDisplayed()) {
 			System.out.println("password validation is visible.");
 		} else {
 			System.out.println("password validation is NOT visible");
@@ -132,18 +143,24 @@ public class LoginPage {
 		wait.until(ExpectedConditions.visibilityOf(email));
 		email.clear();
 		email.sendKeys(user_email);
-
 		password.clear();
 		password.sendKeys(user_password);
 		loginbutton.click();
 		if (email_validation.isDisplayed() & password_validation.isDisplayed()) {
 			System.out.println("email and password validation is visible.");
+			 Assert.fail("Email and password validation messages are displayed - login failed.");
 		} else {
 			System.out.println("email and password validation is NOT visible");
 		}
 	}
 
-	public void checkLogin() {
+	public void checkLogin() throws InterruptedException {
 		wait.until(ExpectedConditions.visibilityOf(brand_Products));
+		Thread.sleep(5000);
+		if (brand_Products.isDisplayed()) {
+			System.out.println("Login Successfully and redirected to Dashboard.");
+		} else {
+			System.out.println("Login Failed.");
+		}
 	}
 }

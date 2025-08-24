@@ -12,11 +12,11 @@ import utils.ExtentReportManager;
 import utils.Log;
 
 public class BaseTest {
-	protected WebDriver driver;
+	protected static WebDriver driver;
 	protected static ExtentReports extent;
 	protected ExtentTest test;
 
-	@BeforeSuite(alwaysRun = true)
+	@BeforeSuite
 
 	public void setUp() {
 		Log.info("Starting webdriver.");

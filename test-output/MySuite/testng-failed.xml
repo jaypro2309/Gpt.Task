@@ -1,34 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [MySuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Brand Select(failed)">
-    <classes>
-      <class name="TestCases.brandSelect">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="setupPage"/>
-          <include name="Hc2uSelect"/>
-          <include name="select_M"/>
-          <include name="PcgsSelect"/>
-        </methods>
-      </class> <!-- TestCases.brandSelect -->
-    </classes>
-  </test> <!-- Brand Select(failed) -->
-  <test thread-count="5" name="Login(failed)">
+<suite name="Failed suite [MySuite]" guice-stage="DEVELOPMENT" preserve-order="true">
+  
+  <test name="Brand_Select" preserve-order="true">
+		<classes>
+			<class name="TestCases.brandSelect">
+				<methods>
+					<include name="setupPage" />
+					<include name="start" />
+					<include name="select_M" />
+					<include name="Hc2uSelect" />
+					<include name="PcgsSelect" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Brand_Select -->
+  
+  <test name="Login(failed)" preserve-order="true">
     <classes>
       <class name="TestCases.login">
         <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="login_case_5"/>
           <include name="setupLoginCases"/>
-          <include name="redirection_dashboard"/>
-          <include name="login_case_6"/>
           <include name="login_case_1"/>
           <include name="login_case_3"/>
           <include name="login_case_2"/>
           <include name="login_case_4"/>
+          <include name="login_case_5"/>
+          <include name="login_case_6"/>
+          <include name="redirection_dashboard"/>
         </methods>
       </class> <!-- TestCases.login -->
     </classes>
