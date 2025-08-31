@@ -1,6 +1,10 @@
 D:\Java Automantion Projects\Gpt.Task\src\main\java\base\BaseTest.java
+D:\Java Automantion Projects\Gpt.Task\src\main\java\page_elements\App_Elements.java
+D:\Java Automantion Projects\Gpt.Task\src\main\java\pages\AddProduct.java
 D:\Java Automantion Projects\Gpt.Task\src\main\java\pages\BrandSelection.java
+D:\Java Automantion Projects\Gpt.Task\src\main\java\pages\Dashboard.java
 D:\Java Automantion Projects\Gpt.Task\src\main\java\pages\LoginPage.java
 D:\Java Automantion Projects\Gpt.Task\src\main\java\utils\ConfigReader.java
+D:\Java Automantion Projects\Gpt.Task\src\main\java\utils\ExcelUtils.java
 D:\Java Automantion Projects\Gpt.Task\src\main\java\utils\ExtentReportManager.java
 D:\Java Automantion Projects\Gpt.Task\src\main\java\utils\Log.java

@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.TestDashboard">
+      <class name="TestCases.TestAddProduct">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="setupCases"/>
           <include name="move_to_dahboard"/>
+          <include name="add_product"/>
         </methods>
-      </class> <!-- TestCases.TestDashboard -->
+      </class> <!-- TestCases.TestAddProduct -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="TestCases.TestDashboard">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="setupCases"/>
+          <include name="move_to_dahboard"/>
+        </methods>
+      </class> <!-- TestCases.TestDashboard -->
+      <class name="TestCases.TestAddProduct">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="setupCases"/>
+          <include name="move_to_dahboard"/>
+          <include name="add_product"/>
+        </methods>
+      </class> <!-- TestCases.TestAddProduct -->
+      <class name="TestCases.Testlogin">
+        <methods>
+          <include name="login_case_7"/>
+          <include name="setUp"/>
+          <include name="login_case_2"/>
+          <include name="tearDown"/>
+          <include name="login_case_1"/>
+          <include name="login_case_4"/>
+          <include name="login_case_6"/>
+          <include name="login_case_5"/>
+          <include name="setupLoginCases"/>
+          <include name="login_case_3"/>
+        </methods>
+      </class> <!-- TestCases.Testlogin -->
+      <class name="TestCases.TestBrandSelect">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="setupPage"/>
+          <include name="select_M"/>
+          <include name="Hc2uSelect"/>
+          <include name="PcgsSelect"/>
+        </methods>
+      </class> <!-- TestCases.TestBrandSelect -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

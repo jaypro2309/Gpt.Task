@@ -1,2 +1,4 @@
-TestCases\login.class
-TestCases\brandSelect.class
+TestCases\TestAddProduct.class
+TestCases\Testlogin.class
+TestCases\TestBrandSelect.class
+TestCases\TestDashboard.class

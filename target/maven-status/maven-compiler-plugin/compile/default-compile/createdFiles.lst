@@ -1,6 +1,10 @@
-base\BaseTest.class
-pages\BrandSelection.class
-utils\Log.class
+utils\ExcelUtils.class
 pages\LoginPage.class
 utils\ExtentReportManager.class
 utils\ConfigReader.class
+pages\AddProduct.class
+base\BaseTest.class
+pages\BrandSelection.class
+utils\Log.class
+page_elements\App_Elements.class
+pages\Dashboard.class
